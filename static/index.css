@@ -1,38 +1,135 @@
+/* Custom CSS for black theme */
 body {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/PIA09959-1280x800_copy.jpg) no-repeat center center fixed;
-  background-size: cover;
-  text-align: center;
+  background-color: #000;
+  color: #fff;
   margin: 0;
-  height: 100%;
-  backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
-  overflow: hidden; /* Add this line to prevent scrolling */
+  padding: 0;
 }
 
-.scene {
-  display: inline-block;
-  vertical-align: middle;
-  perspective: 500px; /* Adjusted perspective value for better depth perception */
-  perspective-origin: 50% 50%;
-  position: relative;
-  height: 100vh; /* Added height for better visibility */
+#header, #content, #footer {
+  text-align: center;
 }
 
-.wrap {
-  position: absolute;
+#header {
+  background-color: #000;
+  padding: 20px;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#header img {
+  width: 20%;
+  height: auto;
+}
+
+#content {
+  text-align: center;
+  padding: 20px;
+  margin-top: -4%;
+}
+
+#content h1 {
+  font-size: 24px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#searchbar {
+  /* Missing styles for #searchbar */
+}
+
+#uv-form {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.form__input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 300px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  background-color: #222;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  width: 50px;
+  height: 50px;
+  padding-right: 1px;
+  padding-left: 1px;
+  text-align: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+.form__input::placeholder {
+  color: #aaa;
+  text-align: center;
+}
+
+.form_input:hover {
+  cursor: pointer;
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #99ccff;
+  font-family: 'Open Sans', sans-serif;
   width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  animation: move 12s infinite linear;
-  animation-fill-mode: forwards;
+  height: 15px;
+  background-color: #000;
+  padding-top: 7.5px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
 }
 
-/* Rest of the CSS code remains unchanged */
+#footer p {
+  margin: 0;
+}
 
-@keyframes move {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.fa {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.fa:hover {
+  color: #aaa;
 }
