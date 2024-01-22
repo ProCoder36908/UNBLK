@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <style>
     body {
-      margin: 0;
+      margin: 0; /* Remove default margin */
       font-family: 'Arial', sans-serif;
     }
 
@@ -12,40 +12,37 @@
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      padding: 20px; /* Add padding to the container */
+      box-sizing: border-box; /* Include padding and border in the element's total width and height */
     }
 
     .button {
       width: calc(50% - 20px);
       max-width: 200px;
-      height: 0;
-      padding-bottom: 100%; /* Make the button square */
-      border-radius: 10px; /* Rounded corners */
-      overflow: hidden;
-      position: relative;
+      height: 120px;
+      background-color: #6b3e9e; /* Purple background */
+      border-radius: 20px; /* Rounded corners */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       text-decoration: none;
-      color: #000; /* Black text */
-      transition: transform 0.3s ease;
+      color: #fff; /* White text */
+      font-size: 14px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .button:hover {
+      background-color: #8f5ac7; /* Darker purple on hover */
       transform: scale(1.1); /* Zoom effect on hover */
     }
 
     .button img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Ensure the image covers the entire container */
+      width: 80%; /* Adjust the image size as needed */
+      max-height: 60%; /* Adjust the image height */
       border-radius: 10px; /* Rounded corners for the image */
-    }
-
-    .button p {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for text */
-      margin: 0;
-      padding: 5px;
+      object-fit: cover; /* Ensure the image covers the container */
     }
   </style>
   <title>Apps</title>
@@ -58,18 +55,18 @@
     </a>
     <a href="XBOX.html" class="button">
       <img src="/Icons/Xbox.png" alt="XBOX">
-      <p>Xbox</p>
+      <p>Button Text 2</p>
     </a>
     <a href="GFCE.html" class="button">
       <img src="/Icons/GeForce.png" alt="Geforce">
       <p>GeForce</p>
     </a>
     <a href="PKI.html" class="button">
-      <img src="/Icons/Poki.png" alt="Poke">
+      <img src="/Icons/Poki.png" alt="Icon 4">
       <p>Poke</p>
     </a>
     <a href="Google.html" class="button">
-      <img src="/Icons/Google.png" alt="Google">
+      <img src="/Icons/Google.png" alt="Icon 5">
       <p>Google</p>
     </a>
     <!-- Add more button elements as needed -->
