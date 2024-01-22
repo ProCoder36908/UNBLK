@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .button {
+      width: calc(50% - 20px);
+      max-width: 200px;
+      height: 120px;
+      background-color: #6b3e9e; /* Purple background */
+      border-radius: 20px; /* Rounded corners */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      color: #fff; /* White text */
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #8f5ac7; /* Darker purple on hover */
+      transform: scale(1.1); /* Zoom effect on hover */
+    }
+
+    .button img {
+      max-width: 80%; /* Adjust the image size as needed */
+      max-height: 80%;
+      border-radius: 10px; /* Rounded corners for the image */
+    }
+  </style>
+  <title>Apps</title>
+</head>
+<body>
+  <div class="button-container">
+    <a href="Roblox.html" class="button">
+      <img src="/Icons/Roblox.png" alt="Roblox">
+      <p>Roblox</p>
+    </a>
+    <a href="XBOX.html" class="button">
+      <img src="/Icons/Xbox.png" alt="XBOX">
+      <p>Button Text 2</p>
+    </a>
+    <a href="GFCE.html" class="button">
+      <img src="/Icons/GeForce.png" alt="Geforce">
+      <p>GeForce</p>
+    </a>
+    <a href="PKI.html" class="button">
+      <img src="/Icons/Poki.png" alt="Icon 4">
+      <p>Poke</p>
+    </a>
+    <a href="Google.html" class="button">
+      <img src="/Icons/Google.png" alt="Icon 5">
+      <p>Google</p>
+    </a>
+    <!-- Add more button elements as needed -->
+  </div>
+</body>
+</html>
