@@ -16,13 +16,13 @@
     }
 
     .button img {
-      width: 100%;
+      width: 100%; /* Make all images the same size */
       height: auto;
     }
 
     .button p {
       position: absolute;
-      bottom: 0;
+      bottom: 50%; /* Adjust the caption position */
       left: 0;
       width: 100%;
       text-align: center;
@@ -31,6 +31,7 @@
       padding: 10px;
       margin: 0;
       opacity: 0;
+      transform: translateY(50%);
       transition: opacity 0.3s ease-in-out;
     }
 
