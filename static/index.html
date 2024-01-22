@@ -20,8 +20,16 @@
       <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
    </head>
    <body>
-     <div class="scene">
-    <div class="wrap">
+      <nav>
+         <a href="https://englishhelp.netlify.app/">Games</a>
+         <a href="https://englishhelp.netlify.app/apps.html">Apps</a>
+         <a href="https://englishhelp.netlify.app/settings.html">Settings</a>
+         <a href="/apps.html">Apps</a>
+         
+         <h1>Nexus-Game-Vault</h1>
+      </nav>
+      <div class="scene">
+         <div class="wrap">
       <div class="wall wall-right"></div>
       <div class="wall wall-left"></div>   
       <div class="wall wall-top"></div>
@@ -36,25 +44,22 @@
       <div class="wall wall-back"></div>    
     </div>
   </div>
+      </div>
       <div id="header">
          <!-- Remove the logo -->
       </div>
-     <div id="content" class="center-content">
-   <h1>Search the Web Freely at Nexus Game Vault</h1>
-
-   <form id="uv-form">
-      <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
-      <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/>
-   </form>
-</div>
-
+      <div id="content" class="center-content">
+         <h1>Search the Web Freely at Nexus Game Vault</h1>
+         <form id="uv-form">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+            <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/>
+         </form>
+      </div>
       <script src="uv/uv.bundle.js" defer></script>
       <script src="uv/uv.config.js" defer></script>
       <script src="register-sw.js" defer></script>
       <script src="search.js" defer></script>
       <script src="index.js" defer></script>
-      <!-- Remove the error.js script -->
-      <!--<script src="error.js" defer></script>-->
       <div id="footer">
          <p>&copy; 2023 Nexus-Game-Vault. All rights reserved.</p>
       </div>
